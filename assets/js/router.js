@@ -15,14 +15,14 @@ export const updateActiveLink = (path) => {
 		link.classList.remove('active');
 	});
 
-	if (path === '/') {
-		path = '';
-	  }
+	console.log(path);
 	// Add active class to the link that matches the current path
-	const activeLink = document.querySelector(`.nav-link[href="/${path}"]`);
-	if (activeLink) {
-		activeLink.classList.add('active');
-	}
+	const activeLinks = document.querySelectorAll(`.nav-link[href="/${path}"]`);
+	if (activeLinks) {
+		activeLinks.forEach((link) => {
+		  link.classList.add('active');
+		});
+	  }
 };
 
 export const navigate = (path) => {

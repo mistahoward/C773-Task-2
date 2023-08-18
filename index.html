@@ -28,19 +28,40 @@
 				</nav>
 				<div class="collapse navbar-collapse mt-auto">
 					<div class="navbar-nav">
-					  <h5><a class="nav-link active" aria-current="page" href="/">Home</a></h5>
-					  <h5><a class="nav-link" href="/#/cats">Cats</a></h5>
-					  <h5><a class="nav-link" href="/#/dogs">Dogs</a></h5>
-					  <h5><a class="nav-link" href="/#/small-pets">Small Pets</a></h5>
-					  <h5><a class="nav-link" href="/#/faqs">FAQs</a></h5>
+					  <h5><a class="nav-link desktop" aria-current="page" href="/#/">Home</a></h5>
+					  <h5><a class="nav-link desktop" href="/#/cats">Cats</a></h5>
+					  <h5><a class="nav-link desktop" href="/#/dogs">Dogs</a></h5>
+					  <h5><a class="nav-link desktop" href="/#/small-pets">Small Pets</a></h5>
+					  <h5><a class="nav-link desktop" href="/#/faqs">FAQs</a></h5>
 					</div>
 				  </div>
-				<form id="search-bar" class="d-flex mt-auto collapse navbar-collapse">
+				<form id="search-bar" class="d-flex mt-auto d-none d-lg-block collapse navbar-collapse">
 					<button class="btn btn-primary" type="submit">
 						<i data-feather="search"></i>
 					</button>
 					<input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
 				</form>
+				<button class="navbar-toggler me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="offcanvas offcanvas-end collapse navbar-expand-lg" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+					<div class="offcanvas-header">
+					  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+					  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+					  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+						<h5><a class="nav-link mobile" aria-current="page" href="/#/">Home</a></h5>
+						<h5><a class="nav-link mobile" href="/#/cats">Cats</a></h5>
+						<h5><a class="nav-link mobile" href="/#/dogs">Dogs</a></h5>
+						<h5><a class="nav-link mobile" href="/#/small-pets">Small Pets</a></h5>
+						<h5><a class="nav-link mobile" href="/#/faqs">FAQs</a></h5>
+					  </ul>
+					  <form class="d-flex mt-3" role="search">
+						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+						<button class="btn btn-outline-success" type="submit">Search</button>
+					  </form>
+					</div>
 			</nav>
 		</div>
 		<div id="content">
