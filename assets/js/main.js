@@ -24,3 +24,8 @@ window.addEventListener('resize', () => {
 
 const currentPath = window.location.hash;
 updateActiveLink(currentPath);
+
+document.addEventListener('DOMContentLoaded', () => {
+	const currentPath = window.location.hash;
+	navigate(currentPath);
+});
