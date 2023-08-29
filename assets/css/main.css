@@ -99,3 +99,25 @@
 	height: 8vh;
 	width: 100%;
 }
+
+.body-anchors {
+	border-right: 2px solid var(--bs-primary);
+}
+
+.body-anchors a {
+	display: block;
+	color: var(--bs-secondary-2) !important;
+	text-decoration: none;
+}
+
+.body-anchors a:hover {
+	color: var(--bs-primary) !important;
+}
+
+.body-anchors a .active {
+	color: var(--bs-primary) !important;
+}
+
+.body-content {
+	padding-left: 2em;
+}

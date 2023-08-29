@@ -4,9 +4,11 @@ export const renderView = (path) => {
 	const deHashedPath = path.substring(1); // Removes the '#'
 	const templateId = routes[deHashedPath] || routes['/']; // Default to home if path not found
 	const template = document.getElementById(templateId);
-	// const content = document.importNode(template.content, true);
-	// document.getElementById('container').innerHTML = '';
-	// document.getElementById('container').appendChild(content);
+	const content = template.content.cloneNode(true); // Clone the template
+  
+	const contentContainer = document.getElementById('content');
+	contentContainer.innerHTML = ''; // Clear existing content
+	contentContainer.appendChild(content);
 };
 
 export const updateActiveLink = (path) => {

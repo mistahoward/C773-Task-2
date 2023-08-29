@@ -1,4 +1,4 @@
-import { navigate, updateActiveLink } from "/assets/js/router.js"
+import { navigate, updateActiveLink } from '/assets/js/router.js';
 
 feather.replace();
 
@@ -16,12 +16,10 @@ window.addEventListener('popstate', () => {
 	navigate(path);
 });
 
-
-
 // Update the active link whenever the window is resized
 window.addEventListener('resize', () => {
 	const currentPath = window.location.hash;
-  	updateActiveLink(currentPath);
+	updateActiveLink(currentPath);
 });
 
 const currentPath = window.location.hash;
