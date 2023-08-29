@@ -85,12 +85,20 @@
 
 #content {
 	height: 75vh;
+	max-height: 75vh !important;
 }
+
+.primary-container {
+	height: 100%;
+}
+
 #primary-card {
 	@media screen and (min-width: 992px) {
 		margin-left: 10%;
 		margin-right: 10%;
 	}
+	height: 100%;
+	overflow-y: auto;
 }
 
 .footer {
