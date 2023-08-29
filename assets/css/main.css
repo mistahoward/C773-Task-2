@@ -51,7 +51,7 @@
 	height: 3.5rem;
 }
 
-#navbar-container {
+.navbar-container {
 	background-color: rgb(189, 189, 189, 0.6);
 	padding-left: 0.5em;
 }
@@ -81,4 +81,21 @@
 #search-bar .form-control:focus,
 #search-bar .btn:focus {
 	box-shadow: none;
+}
+
+#content {
+	height: 75vh;
+}
+#primary-card {
+	@media screen and (min-width: 992px) {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+}
+
+.footer {
+	position: fixed;
+	bottom: 0;
+	height: 8vh;
+	width: 100%;
 }
