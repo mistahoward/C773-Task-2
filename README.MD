@@ -1,6 +1,6 @@
 
 # Paradigm Pet Professionals Website Redesign (WGU C773 - UI Design)
-This repository contains an interactive desktop prototype for the Paradigm Pet Professionals website. The project is part of the C773 - UI Design course at Western Governor's University (WGU).
+This repository contains an interactive prototype for the Paradigm Pet Professionals website. The project is part of the C773 - UI Design course at Western Governor's University (WGU).
 
 ## Introduction
 As UI/UX design continues to gain prominence, this project demonstrates the nuances of modern design and prototyping. The goal is to create an engaging and functional design that serves both the company and its specific user personas.
