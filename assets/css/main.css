@@ -133,3 +133,9 @@
 .app {
 	height: 100vh !important;
 }
+
+h5 {
+	font-weight: 500;
+	color: var(--bs-primary) !important;
+	letter-spacing: 0.1em;
+}
