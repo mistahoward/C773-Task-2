@@ -134,7 +134,7 @@
 	height: 100vh !important;
 }
 
-h5 {
+h5, h6 {
 	font-weight: 500;
 	color: var(--bs-primary) !important;
 	letter-spacing: 0.1em;
